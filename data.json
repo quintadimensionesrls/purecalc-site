@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "cidr-to-subnet-mask-slash-24",
+    "title": "/24 CIDR to Subnet Mask Converter",
+    "from_unit": "/24",
+    "data": {
+      "mask": "255.255.255.0",
+      "hosts": "256",
+      "usable": "254",
+      "binary": "11111111111111111111111100000000"
+    },
+    "seo_content": "A /24 subnet mask is the most common configuration for local networks..."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-25",
+    "title": "/25 CIDR to Subnet Mask Converter",
+    "from_unit": "/25",
+    "data": {
+      "mask": "255.255.255.128",
+      "hosts": "128",
+      "usable": "126",
+      "binary": "11111111111111111111111110000000"
+    },
+    "seo_content": "A /25 subnet mask divides a class C network into two smaller subnets..."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-30",
+    "title": "/30 CIDR to Subnet Mask Converter",
+    "from_unit": "/30",
+    "data": {
+      "mask": "255.255.255.252",
+      "hosts": "4",
+      "usable": "2",
+      "binary": "11111111111111111111111111111100"
+    },
+    "seo_content": "A /30 subnet mask is typically used for point-to-point links between routers..."
+  }
+]

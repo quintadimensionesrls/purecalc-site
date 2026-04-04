@@ -1,0 +1,153 @@
+import React, { useState } from 'react';
+import { Calculator, Copy, Check, Info, Shield, Zap } from 'lucide-react';
+
+/**
+ * COMPONENTE UNICO: PURECALC TOOL ENGINE
+ * Questo file gestisce: 
+ * 1. Visualizzazione del Tool
+ * 2. Logica di calcolo Networking
+ * 3. Layout ottimizzato per la SEO e Ads
+ */
+
+const PureCalcNetworkingTool = ({ data }) => {
+  // Stato per gestire il feedback del tasto "Copia"
+  const [copied, setCopied] = useState(false);
+
+  // --- LOGICA TECNICA ---
+  const calculateWildcard = (mask) => {
+    return mask.split('.').map(o => 255 - parseInt(o)).join('.');
+  };
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+      
+      {/* 1. HEADER DEL SITO (NAVBAR) */}
+      <nav className="bg-white border-b border-slate-200 p-4 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <div className="text-xl font-bold text-blue-600 flex items-center gap-2">
+            <Zap fill="currentColor" size={20} /> PureCalc.io
+          </div>
+          <div className="text-sm text-slate-500 hidden md:block">
+            Professional Network Utilities
+          </div>
+        </div>
+      </nav>
+
+      {/* 2. AREA PUBBLICITÀ TOP (ADSENSE PLACEHOLDER) */}
+      <div className="max-w-4xl mx-auto mt-6 px-4">
+        <div className="w-full h-[90px] bg-slate-200 rounded flex items-center justify-center text-slate-400 text-xs border border-dashed border-slate-300">
+          ADVERTISEMENT (TOP_BANNER)
+        </div>
+      </div>
+
+      <main className="max-w-4xl mx-auto py-8 px-4">
+        
+        {/* 3. LA TOOL CARD (IL CUORE DEL SITO) */}
+        <div className="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+          
+          {/* Titolo e Categoria */}
+          <div className="p-6 border-b border-slate-100 bg-slate-50/50">
+            <h1 className="text-2xl md:text-3xl font-extrabold text-slate-800">
+              {data.title}
+            </h1>
+            <div className="flex gap-2 mt-2">
+              <span className="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded uppercase">Networking</span>
+              <span className="bg-slate-100 text-slate-600 text-[10px] font-bold px-2 py-1 rounded uppercase">IPv4</span>
+            </div>
+          </div>
+
+          {/* Area Risultato Principale */}
+          <div className="p-8 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="w-full md:w-1/2">
+              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-500 block mb-2">
+                Subnet Mask
+              </label>
+              <div className="flex items-center gap-4">
+                <code className="text-4xl md:text-5xl font-mono font-bold text-slate-900 tracking-tight">
+                  {data.data.mask}
+                </code>
+                <button 
+                  onClick={() => copyToClipboard(data.data.mask)}
+                  className="p-3 bg-slate-100 hover:bg-blue-600 hover:text-white rounded-xl transition-all"
+                >
+                  {copied ? <Check size={20} /> : <Copy size={20} />}
+                </button>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-8 w-full md:w-1/2 border-t md:border-t-0 md:border-l border-slate-100 pt-6 md:pt-0 md:pl-10">
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1">Total IPs</label>
+                <p className="text-2xl font-mono font-bold text-slate-800">{data.data.hosts}</p>
+              </div>
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1">Usable Hosts</label>
+                <p className="text-2xl font-mono font-bold text-emerald-500">{data.data.usable}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Dettagli Tecnici (Binary & Extra) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 border-t border-slate-100">
+            <div className="p-6 bg-slate-900">
+              <h3 className="text-slate-400 text-xs font-bold uppercase mb-3 flex items-center gap-2">
+                <Shield size={14} /> Binary Representation
+              </h3>
+              <code className="text-emerald-400 font-mono text-sm break-all leading-relaxed">
+                {data.data.binary.match(/.{8}/g).join('.')}
+              </code>
+            </div>
+            <div className="p-6 space-y-4">
+              <div className="flex justify-between text-sm">
+                <span className="text-slate-500 font-medium">Wildcard Mask</span>
+                <code className="font-bold text-slate-700">{calculateWildcard(data.data.mask)}</code>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-slate-500 font-medium">CIDR Notation</span>
+                <span className="font-bold text-blue-600">{data.from_unit}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 4. AREA PUBBLICITÀ MIDDLE (IN-CONTENT ADS) */}
+        <div className="my-10 w-full h-[250px] bg-white border border-slate-200 rounded flex items-center justify-center text-slate-400 text-xs">
+          ADVERTISEMENT (SQUARE_UNIT)
+        </div>
+
+        {/* 5. CONTENUTO SEO (L'ARTICOLO GENERATO DALL'AI) */}
+        <article className="prose prose-slate max-w-none bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <Info className="text-blue-500" /> Technical Explanation
+          </h2>
+          {/* Questo div inietterà il testo lungo che abbiamo generato via script */}
+          <div 
+            className="text-slate-600 leading-relaxed space-y-4"
+            dangerouslySetInnerHTML={{ __html: data.seo_content }} 
+          />
+        </article>
+
+      </main>
+
+      {/* 6. FOOTER */}
+      <footer className="bg-slate-900 text-slate-500 py-12 px-4 mt-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm">© 2026 PureCalc.io - High Precision Network Tools</p>
+          <div className="flex justify-center gap-6 mt-4 text-xs">
+            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#" className="hover:text-white">Terms of Service</a>
+            <a href="#" className="hover:text-white">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default PureCalcNetworkingTool;
