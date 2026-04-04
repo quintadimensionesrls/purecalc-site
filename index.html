@@ -23,11 +23,16 @@
 
             // Carichiamo i dati dal tuo file data.json
             useEffect(() => {
-                fetch('./data.json')
-                    .then(response => response.json())
-                    .then(json => setData(json[0])) // Prendiamo il primo tool per ora
-                    .catch(err => console.error("Errore caricamento dati:", err));
-            }, []);
+    fetch('./data.json')
+        .then(response => response.json())
+        .then(json => {
+            // Cerca nel JSON l'elemento che corrisponde al nome nella barra degli indirizzi
+            const path = window.location.pathname.split('/').pop();
+            const currentTool = json.find(t => t.slug === path) || json[0];
+            setData(currentTool);
+        })
+        .catch(err => console.error("Errore:", err));
+}, []);
 
             if (!data) return <div class="p-10 text-center font-sans">Loading awesome tools...</div>;
 
@@ -109,4 +114,3 @@
     </script>
 </body>
 </html>
-export default PureCalcNetworkingTool;
