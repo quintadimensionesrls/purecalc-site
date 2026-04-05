@@ -7,8 +7,9 @@
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>PureCalc.io | Professional Tools</title>
 </head>
-<body class="bg-slate-50">
+<body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
 
     <script type="text/babel">
@@ -34,7 +35,7 @@
                             document.title = tool.title + " | PureCalc.io";
                         } else {
                             setIsHome(true);
-                            document.title = "PureCalc.io | Professional Calculators";
+                            document.title = "PureCalc.io | All Calculators";
                         }
                     });
             }, []);
@@ -45,107 +46,109 @@
                 setTimeout(() => setCopied(false), 2000);
             };
 
-            if (allTools.length === 0) return <div className="p-10 text-center">Loading...</div>;
+            if (allTools.length === 0) return <div className="p-20 text-center font-mono">Loading PureCalc Engine...</div>;
 
             return (
-                <div className="min-h-screen font-sans">
+                <div className="min-h-screen flex flex-col">
                     {/* NAVBAR */}
                     <nav className="bg-white border-b border-slate-200 p-4 sticky top-0 z-50">
                         <div className="max-w-6xl mx-auto flex justify-between items-center">
-                            <a href="/" className="font-black text-xl text-blue-600">PureCalc.io</a>
-                            <div className="flex gap-4 text-sm font-medium text-slate-500">
-                                <a href="/" className="hover:text-blue-600">Home</a>
+                            <a href="/" className="font-black text-2xl text-blue-600 tracking-tighter">PureCalc<span className="text-slate-400">.io</span></a>
+                            <div className="flex gap-6 text-sm font-bold text-slate-500 uppercase tracking-widest">
+                                <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
                             </div>
                         </div>
                     </nav>
 
-                    {isHome ? (
-                        /* VISTA HOME */
-                        <div className="max-w-6xl mx-auto py-12 px-4">
-                            <h1 className="text-4xl font-black text-slate-900 mb-8 text-center">All Professional Tools</h1>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                {allTools.map(tool => (
-                                    <a key={tool.slug} href={`/convert/${tool.slug}`} className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-400 shadow-sm transition-all group">
-                                        <span className="text-[10px] font-bold text-blue-500 uppercase">Networking</span>
-                                        <h2 className="text-lg font-bold text-slate-800 mt-2 group-hover:text-blue-600">{tool.title}</h2>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-                    ) : (
-                        /* VISTA TOOL (CALCOLATORE) */
-                        <main className="max-w-4xl mx-auto py-8 px-4">
-                            <div className="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
-                                <div className="p-6 border-b border-slate-100 bg-slate-50/50">
-                                    <h1 className="text-3xl font-extrabold text-slate-800">{currentData.title}</h1>
+                    <div className="flex-grow">
+                        {isHome ? (
+                            /* HOME PAGE */
+                            <div className="max-w-6xl mx-auto py-16 px-4">
+                                <div className="text-center mb-16">
+                                    <h1 className="text-5xl font-black text-slate-900 mb-4">Professional Infrastructure Tools</h1>
+                                    <p className="text-slate-500 text-lg">Fast, precise, and ad-free calculators for modern engineers.</p>
                                 </div>
-                                <div className="p-8 flex flex-col md:flex-row justify-between items-center gap-10">
-                                    <div>
-                                        <label className="text-[10px] font-bold text-blue-500 uppercase">Subnet Mask</label>
-                                        <div className="flex items-center gap-4">
-                                            <code className="text-4xl font-mono font-bold">{currentData.data.mask}</code>
-                                            <button onClick={() => copyToClipboard(currentData.data.mask)} className="p-2 bg-slate-100 rounded-lg">
-                                                {copied ? "✅" : "📋"}
-                                            </button>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    {allTools.map(tool => (
+                                        <a key={tool.slug} href={`/convert/${tool.slug}`} className="bg-white p-8 rounded-3xl border border-slate-200 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-100 transition-all group">
+                                            <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest bg-blue-50 px-2 py-1 rounded">{tool.category}</span>
+                                            <h2 className="text-xl font-bold text-slate-800 mt-4 group-hover:text-blue-600">{tool.title}</h2>
+                                            <p className="text-slate-400 text-sm mt-2">Professional high-precision converter for {tool.from_unit}.</p>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            /* TOOL PAGE */
+                            <main className="max-w-4xl mx-auto py-12 px-4">
+                                <div className="bg-white border border-slate-200 rounded-[2.5rem] shadow-2xl overflow-hidden">
+                                    <div className="p-8 border-b border-slate-100 bg-slate-50/50">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Live Calculator</span>
+                                        </div>
+                                        <h1 className="text-4xl font-black text-slate-900 tracking-tight">{currentData.title}</h1>
+                                    </div>
+                                    
+                                    <div className="p-10 flex flex-col md:flex-row justify-between items-center gap-12">
+                                        <div className="w-full md:w-auto text-center md:text-left">
+                                            <label className="text-[10px] font-black text-blue-500 uppercase tracking-widest block mb-2">
+                                                {currentData.category === 'networking' ? 'Subnet Mask' : 'Result'}
+                                            </label>
+                                            <div className="flex items-center justify-center md:justify-start gap-4">
+                                                <code className="text-5xl font-mono font-black text-slate-900">{currentData.data.main_val}</code>
+                                                <button onClick={() => copyToClipboard(currentData.data.main_val)} className="p-3 bg-slate-100 hover:bg-blue-600 hover:text-white rounded-2xl transition-all">
+                                                    {copied ? "✅" : "📋"}
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="flex gap-12 border-l border-slate-100 pl-12 hidden md:flex">
+                                            <div>
+                                                <p className="text-[10px] font-bold text-slate-400 uppercase mb-1">{currentData.data.label_1}</p>
+                                                <p className="text-2xl font-black text-slate-800">{currentData.data.val_1}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-[10px] font-bold text-slate-400 uppercase mb-1">{currentData.data.label_2}</p>
+                                                <p className="text-2xl font-black text-emerald-500">{currentData.data.val_2}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="flex gap-10">
-                                        <div><p className="text-xs text-slate-400">Total IPs</p><p className="text-xl font-bold">{currentData.data.hosts}</p></div>
-                                        <div><p className="text-xs text-slate-400">Usable</p><p className="text-xl font-bold text-emerald-500">{currentData.data.usable}</p></div>
+
+                                    <div className="px-10 py-6 bg-slate-900 text-emerald-400 font-mono text-sm">
+                                        <span className="text-slate-500 text-[10px] block mb-1 uppercase font-sans font-bold">Technical Details</span>
+                                        {currentData.data.extra}
                                     </div>
                                 </div>
-                                <div className="p-6 bg-slate-900 text-emerald-400 font-mono text-sm">
-                                    <p className="text-slate-500 text-xs mb-1 uppercase font-sans">Binary</p>
-                                    {currentData.data.binary}
+
+                                <article className="mt-12 bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm prose prose-slate max-w-none">
+                                    <h2 className="text-2xl font-black text-slate-800 mb-6">About this conversion</h2>
+                                    <div className="text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: currentData.seo_content }} />
+                                </article>
+                            </main>
+                        )}
+                    </div>
+
+                    {/* FOOTER */}
+                    <footer className="bg-white border-t border-slate-200 pt-16 pb-8">
+                        <div className="max-w-6xl mx-auto px-4 text-center">
+                            <div className="mb-8">
+                                <a href="/" className="font-black text-xl text-blue-600 tracking-tighter">PureCalc.io</a>
+                                <p className="text-slate-400 text-sm mt-2 max-w-md mx-auto">High-precision digital tools for the next generation of infrastructure experts.</p>
+                            </div>
+                            <div className="flex justify-center gap-8 mb-12 text-sm font-bold text-slate-500 uppercase tracking-widest">
+                                <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
+                                <a href="/sitemap.xml" className="hover:text-blue-600 transition-colors">Sitemap</a>
+                            </div>
+                            <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-300 text-[10px] font-bold uppercase tracking-widest">
+                                <p>© 2026 PureCalc.io - Precision Guaranteed</p>
+                                <div className="flex gap-4">
+                                    <span className="border border-slate-200 px-2 py-1 rounded">V 2.1.0</span>
+                                    <span className="border border-slate-200 px-2 py-1 rounded">System Stable</span>
                                 </div>
                             </div>
-                            <article className="mt-8 bg-white p-8 rounded-2xl border border-slate-200 prose">
-                                <h2 className="font-bold mb-4">Technical Explanation</h2>
-                                <div dangerouslySetInnerHTML={{ __html: currentData.seo_content }} />
-                            </article>
-                        </main>
-                    )}
-                    <footer class="bg-white border-t border-slate-200 mt-20">
-    <div class="max-w-6xl mx-auto py-12 px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-10">
-            
-            <div class="col-span-1 md:col-span-2">
-                <a href="/" class="text-xl font-black text-blue-600 tracking-tighter">
-                    PureCalc.io
-                </a>
-                <p class="mt-4 text-slate-500 text-sm leading-relaxed max-w-sm">
-                    PureCalc is a high-precision calculation engine for network engineers and IT professionals. 
-                    Our mission is to provide fast, reliable, and accessible tools for daily infrastructure tasks.
-                </p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-slate-800 mb-4 text-sm uppercase tracking-widest">Tools</h4>
-                <ul class="space-y-2 text-sm text-slate-500 font-medium">
-                    <li><a href="/" class="hover:text-blue-600">All Calculators</a></li>
-                    <li><a href="/sitemap.xml" class="hover:text-blue-600">Sitemap XML</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-slate-800 mb-4 text-sm uppercase tracking-widest">Legal</h4>
-                <ul class="space-y-2 text-sm text-slate-500 font-medium">
-                    <li><a href="#" class="hover:text-blue-600 text-slate-400 cursor-not-allowed">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-blue-600 text-slate-400 cursor-not-allowed">Cookie Settings</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-slate-400 text-xs">
-                &copy; 2026 PureCalc.io. All rights reserved. Built for speed and precision.
-            </p>
-            <div class="flex gap-6 text-slate-300">
-                <span class="text-[10px] border border-slate-200 px-2 py-1 rounded">v 1.0.4 - Stable</span>
-            </div>
-        </div>
-    </div>
-</footer>
+                        </div>
+                    </footer>
                 </div>
             );
         }
