@@ -17,9 +17,112 @@
         const { useState, useEffect } = React;
 
         // Componente Principale
-        function App() {
-            const [data, setData] = useState(null);
-            const [copied, setCopied] = useState(false);
+        const { useState, useEffect } = React;
+
+function App() {
+    const [allTools, setAllTools] = useState([]); // Memorizziamo tutto il database
+    const [currentData, setCurrentData] = useState(null);
+    const [isHome, setIsHome] = useState(true);
+    const [copied, setCopied] = useState(false);
+
+    useEffect(() => {
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(json => {
+                setAllTools(json);
+                
+                // Capiamo dove si trova l'utente
+                const pathSlug = window.location.pathname.split('/').pop();
+                
+                if (pathSlug && pathSlug !== "" && pathSlug !== "index.html") {
+                    const tool = json.find(t => t.slug === pathSlug);
+                    if (tool) {
+                        setCurrentData(tool);
+                        setIsHome(false);
+                        document.title = tool.title + " | PureCalc.io";
+                    }
+                } else {
+                    setIsHome(true);
+                    document.title = "PureCalc.io | All Networking & Tech Tools";
+                }
+            })
+            .catch(err => console.error("Errore:", err));
+    }, []);
+
+    const copyToClipboard = (text) => {
+        navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
+    // --- VISTA HOME (L'INDICE) ---
+    const HomeView = () => (
+        <div className="max-w-6xl mx-auto py-12 px-4">
+            <header className="mb-12 text-center">
+                <h1 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                    Free Online Professional Calculators
+                </h1>
+                <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+                    A collection of high-precision tools for network engineers, developers, and tech enthusiasts.
+                </p>
+            </header>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {allTools.map(tool => (
+                    <a key={tool.slug} href={`/convert/${tool.slug}`} className="block group">
+                        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
+                            <div className="flex justify-between items-start mb-4">
+                                <span className="bg-blue-50 text-blue-600 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">
+                                    Networking
+                                </span>
+                                <div className="text-slate-300 group-hover:text-blue-500 transition-colors">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                            <h2 className="text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors">
+                                {tool.title}
+                            </h2>
+                            <p className="text-slate-500 text-sm mt-2 line-clamp-2">
+                                Professional calculator for {tool.from_unit} prefix and subnetting details.
+                            </p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    );
+
+    // --- RENDERIZZA IL CONTENUTO ---
+    return (
+        <div className="min-h-screen font-sans bg-slate-50">
+            {/* NAVBAR */}
+            <nav className="bg-white border-b border-slate-200 p-4 sticky top-0 z-50">
+                <div className="max-w-6xl mx-auto flex justify-between items-center">
+                    <a href="/" className="font-black text-xl text-blue-600 tracking-tighter hover:opacity-80">
+                        PureCalc.io
+                    </a>
+                    <div className="hidden md:flex gap-6 text-sm font-medium text-slate-500">
+                        <a href="/" className="hover:text-blue-600">Home</a>
+                        <a href="/sitemap.xml" className="hover:text-blue-600">Sitemap</a>
+                    </div>
+                </div>
+            </nav>
+
+            {isHome ? <HomeView /> : (
+                /* QUI VA IL CODICE DELLA TOOL CARD CHE ABBIAMO GIÀ FATTO */
+                /* (Sostituisci questa parte col div della card che hai già funzionante) */
+                <main className="max-w-4xl mx-auto py-8 px-4">
+                    {/* ... la tua card attuale ... */}
+                </main>
+            )}
+            
+            {/* FOOTER */}
+            <footer className="mt-20 border-t border-slate-200 py-10 text-center text-slate-400 text-sm">
+                &copy; 2026 PureCalc.io - High Precision Infrastructure Tools
+            </footer>
+        </div>
+    );
+}
 
             // Carichiamo i dati dal tuo file data.json
             useEffect(() => {
