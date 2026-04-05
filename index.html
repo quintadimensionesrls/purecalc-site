@@ -23,7 +23,7 @@
 
             // Carichiamo i dati dal tuo file data.json
             useEffect(() => {
-    fetch('./data.json')
+    fetch('/data.json')
         .then(response => response.json())
         .then(json => {
             // Cerca nel JSON l'elemento che corrisponde al nome nella barra degli indirizzi
