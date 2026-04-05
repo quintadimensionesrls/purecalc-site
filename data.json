@@ -3,48 +3,63 @@
     "slug": "cidr-to-subnet-mask-slash-24",
     "title": "/24 CIDR to Subnet Mask Converter",
     "from_unit": "/24",
-    "data": {
-      "mask": "255.255.255.0",
-      "hosts": "256",
-      "usable": "254",
-      "binary": "11111111.11111111.11111111.00000000"
-    },
-    "seo_content": "<p>A <strong>/24 subnet mask</strong> (255.255.255.0) is the standard for most local area networks (LANs). It provides 256 total IP addresses, with 254 available for devices after reserving the network and broadcast addresses.</p><p>This prefix is ideal for small businesses and home offices because it offers a perfect balance between network size and ease of management. In binary, the first 24 bits are set to 1, locking the network portion and leaving 8 bits for host identification.</p>"
+    "data": { "mask": "255.255.255.0", "hosts": "256", "usable": "254", "binary": "11111111.11111111.11111111.00000000" },
+    "seo_content": "A /24 subnet mask is the standard for small business networks, offering 254 usable IP addresses."
   },
   {
-    "slug": "cidr-to-subnet-mask-slash-25",
-    "title": "/25 CIDR to Subnet Mask Converter",
-    "from_unit": "/25",
-    "data": {
-      "mask": "255.255.255.128",
-      "hosts": "128",
-      "usable": "126",
-      "binary": "11111111.11111111.11111111.10000000"
-    },
-    "seo_content": "<p>The <strong>/25 CIDR prefix</strong> divides a standard Class C network into two equal segments. It uses a subnet mask of 255.255.255.128.</p><p>This is often used by network administrators to isolate different departments or guest Wi-Fi networks within the same physical infrastructure. You get 126 usable host addresses per subnet. It is a great way to reduce broadcast traffic and improve network security.</p>"
+    "slug": "cidr-to-subnet-mask-slash-23",
+    "title": "/23 CIDR to Subnet Mask Converter",
+    "from_unit": "/23",
+    "data": { "mask": "255.255.254.0", "hosts": "512", "usable": "510", "binary": "11111111.11111111.11111110.00000000" },
+    "seo_content": "A /23 prefix provides double the capacity of a /24, ideal for growing office infrastructures."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-22",
+    "title": "/22 CIDR to Subnet Mask Converter",
+    "from_unit": "/22",
+    "data": { "mask": "255.255.252.0", "hosts": "1024", "usable": "1022", "binary": "11111111.11111111.11111100.00000000" },
+    "seo_content": "The /22 subnet mask is commonly used in medium-sized enterprise networks requiring over 1000 hosts."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-26",
+    "title": "/26 CIDR to Subnet Mask Converter",
+    "from_unit": "/26",
+    "data": { "mask": "255.255.255.192", "hosts": "64", "usable": "62", "binary": "11111111.11111111.11111111.11000000" },
+    "seo_content": "A /26 prefix splits a standard network into four segments of 62 usable hosts each."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-27",
+    "title": "/27 CIDR to Subnet Mask Converter",
+    "from_unit": "/27",
+    "data": { "mask": "255.255.255.224", "hosts": "32", "usable": "30", "binary": "11111111.11111111.11111111.11100000" },
+    "seo_content": "The /27 mask is perfect for small departments or specific VLAN routing."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-28",
+    "title": "/28 CIDR to Subnet Mask Converter",
+    "from_unit": "/28",
+    "data": { "mask": "255.255.255.240", "hosts": "16", "usable": "14", "binary": "11111111.11111111.11111111.11110000" },
+    "seo_content": "A /28 subnet provides 14 usable IPs, often used for small server clusters."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-29",
+    "title": "/29 CIDR to Subnet Mask Converter",
+    "from_unit": "/29",
+    "data": { "mask": "255.255.255.248", "hosts": "8", "usable": "6", "binary": "11111111.11111111.11111111.11111000" },
+    "seo_content": "The /29 prefix is a favorite for small public IP blocks assigned to business circuits."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-30",
     "title": "/30 CIDR to Subnet Mask Converter",
     "from_unit": "/30",
-    "data": {
-      "mask": "255.255.255.252",
-      "hosts": "4",
-      "usable": "2",
-      "binary": "11111111.11111111.11111111.11111100"
-    },
-    "seo_content": "<p>A <strong>/30 subnet</strong> is very specific: it is designed for point-to-point links. With a mask of 255.255.255.252, it provides only 2 usable IP addresses.</p><p>This is the gold standard for connecting two routers directly, as it wastes no IP addresses. Engineers use /30 prefixes for WAN links and serial connections where only the two ends of the connection need an identity.</p>"
+    "data": { "mask": "255.255.255.252", "hosts": "4", "usable": "2", "binary": "11111111.11111111.11111111.11111100" },
+    "seo_content": "Used for point-to-point router links, a /30 mask minimizes IP waste."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-32",
     "title": "/32 CIDR (Host Mask) Details",
     "from_unit": "/32",
-    "data": {
-      "mask": "255.255.255.255",
-      "hosts": "1",
-      "usable": "1",
-      "binary": "11111111.11111111.11111111.11111111"
-    },
-    "seo_content": "<p>A <strong>/32 prefix</strong> represents a single specific IP address, also known as a host mask. The subnet mask is 255.255.255.255.</p><p>In routing tables, a /32 route is the most specific possible path. It is commonly used for Loopback interfaces on routers or to define a specific firewall rule for one single machine. There is no 'network' here, just one unique host.</p>"
+    "data": { "mask": "255.255.255.255", "hosts": "1", "usable": "1", "binary": "11111111.11111111.11111111.11111111" },
+    "seo_content": "A /32 mask represents a single host or loopback address in networking."
   }
 ]
