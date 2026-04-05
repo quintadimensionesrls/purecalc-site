@@ -29,70 +29,54 @@
     "category": "networking",
     "from_unit": "/24",
     "data": { "main_val": "255.255.255.0", "label_1": "Total IPs", "val_1": "256", "label_2": "Usable", "val_2": "254", "extra": "Binary: 11111111.11111111.11111111.00000000" },
-    "seo_content": "The standard /24 mask is the most used for local LANs and small office networks."
+    "seo_content": "The standard /24 mask (Class C) is the most used for local LANs and small office networks."
   },
   {
-    "slug": "bits-to-kilobits-converter",
-    "title": "Bits to Kilobits (Kb) Converter",
-    "category": "unit",
-    "from_unit": "Bits",
-    "data": { "main_val": "0.001 Kb", "label_1": "Base 10", "val_1": "/ 1000", "label_2": "Ratio", "val_2": "1000:1", "extra": "1 Kilobit is exactly 1000 bits in standard networking terminology." },
-    "seo_content": "Convert bits to kilobits instantly. Essential for calculating low-bandwidth legacy connections."
-  },
-  {
-    "slug": "kilobits-to-megabits-converter",
-    "title": "Kilobits (Kb) to Megabits (Mb) Converter",
-    "category": "unit",
-    "from_unit": "Kb",
-    "data": { "main_val": "0.001 Mb", "label_1": "Formula", "val_1": "/ 1000", "label_2": "Type", "val_2": "Decimal", "extra": "1000 Kilobits = 1 Megabit. This is the standard for ISP speed ratings." },
-    "seo_content": "Calculate Megabits from Kilobits. Most internet speeds are measured using this decimal conversion."
-  },
-  {
-    "slug": "megabits-to-gigabits-converter",
-    "title": "Megabits (Mb) to Gigabits (Gb) Converter",
-    "category": "unit",
-    "from_unit": "Mb",
-    "data": { "main_val": "0.001 Gb", "label_1": "Formula", "val_1": "/ 1000", "label_2": "Network", "val_2": "Fiber", "extra": "A 1000 Mbps connection is equivalent to a 1 Gbps Fiber line." },
-    "seo_content": "Convert Mbps to Gbps. High-speed networking often requires converting between these two units."
-  },
-  {
-    "slug": "kilobytes-to-megabytes-converter",
-    "title": "Kilobytes (KB) to Megabytes (MB) Converter",
-    "category": "unit",
-    "from_unit": "KB",
-    "data": { "main_val": "0.000976 MB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Ratio", "val_2": "1024:1", "extra": "In operating systems like Windows, 1024 KB = 1 MB." },
-    "seo_content": "Convert KB to MB using the precise binary 1024 standard used by computers."
-  },
-  {
-    "slug": "megabytes-to-gigabytes-converter",
-    "title": "Megabytes (MB) to Gigabytes (GB) Converter",
-    "category": "unit",
-    "from_unit": "MB",
-    "data": { "main_val": "0.000976 GB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Decimal", "val_2": "/ 1000", "extra": "1024 MB = 1 GB. Note: RAM uses 1024, while most HDD makers use 1000." },
-    "seo_content": "Fast MB to GB conversion for RAM and disk space calculations."
-  },
-  {
-    "slug": "gigabytes-to-terabytes-converter",
-    "title": "Gigabytes (GB) to Terabytes (TB) Converter",
-    "category": "unit",
-    "from_unit": "GB",
-    "data": { "main_val": "0.000976 TB", "label_1": "Formula", "val_1": "/ 1024", "label_2": "Storage", "val_2": "Tera", "extra": "1024 Gigabytes equal 1 Terabyte in binary storage systems." },
-    "seo_content": "Accurately convert GB to TB for server storage and cloud capacity planning."
-  },
-  {
-    "slug": "terabytes-to-petabytes-converter",
-    "title": "Terabytes (TB) to Petabytes (PB) Converter",
+    "slug": "terabytes-to-gigabytes-converter",
+    "title": "Terabytes (TB) to Gigabytes (GB) Converter",
     "category": "unit",
     "from_unit": "TB",
-    "data": { "main_val": "0.000976 PB", "label_1": "Enterprise", "val_1": "/ 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1024 Terabytes = 1 Petabyte. This scale is used in Big Data and Data Centers." },
-    "seo_content": "Convert TB to PB. A must-have tool for data architects and enterprise storage managers."
+    "data": { "main_val": "1024 GB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Decimal", "val_2": "x 1000", "extra": "1 TB is 1024 GB in binary systems (Windows) or 1000 GB in decimal (Disk manufacturers)." },
+    "seo_content": "Quickly convert TB to GB. Understanding the 1024 vs 1000 ratio is key for storage management."
   },
   {
-    "slug": "kilobits-to-kilobytes-converter",
-    "title": "Kilobits (Kb) to Kilobytes (KB) Converter",
+    "slug": "gigabytes-to-megabytes-converter",
+    "title": "Gigabytes (GB) to Megabytes (MB) Converter",
     "category": "unit",
-    "from_unit": "Kb",
-    "data": { "main_val": "0.125 KB", "label_1": "Byte Ratio", "val_1": "/ 8", "label_2": "Standard", "val_2": "Binary", "extra": "Since 8 bits = 1 Byte, 8 Kilobits equal 1 Kilobyte." },
-    "seo_content": "The most accurate way to convert networking kilobits to storage kilobytes."
+    "from_unit": "GB",
+    "data": { "main_val": "1024 MB", "label_1": "Formula", "val_1": "x 1024", "label_2": "Type", "val_2": "Binary", "extra": "Standard conversion used by RAM and Operating Systems: 1 GB = 1024 MB." },
+    "seo_content": "Convert GB to MB accurately. Ideal for checking file sizes and memory capacity."
+  },
+  {
+    "slug": "megabytes-to-kilobytes-converter",
+    "title": "Megabytes (MB) to Kilobytes (KB) Converter",
+    "category": "unit",
+    "from_unit": "MB",
+    "data": { "main_val": "1024 KB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Ratio", "val_2": "1024:1", "extra": "1 Megabyte equals 1024 Kilobytes in computing standards." },
+    "seo_content": "Instantly calculate KB from MB. Essential for web optimization and small file management."
+  },
+  {
+    "slug": "petabytes-to-terabytes-converter",
+    "title": "Petabytes (PB) to Terabytes (TB) Converter",
+    "category": "unit",
+    "from_unit": "PB",
+    "data": { "main_val": "1024 TB", "label_1": "Big Data", "val_1": "x 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1 Petabyte is equivalent to 1024 Terabytes. Used in cloud infrastructure." },
+    "seo_content": "Convert PB to TB. High-level conversion for data center and enterprise storage solutions."
+  },
+  {
+    "slug": "megabits-to-megabytes-converter",
+    "title": "Megabits (Mb) to Megabytes (MB) Converter",
+    "category": "unit",
+    "from_unit": "Mb",
+    "data": { "main_val": "0.125 MB", "label_1": "Ratio", "val_1": "1:8", "label_2": "Calculation", "val_2": "/ 8", "extra": "8 Megabits make 1 Megabyte. This explains why a 100 Mbps line downloads at 12.5 MB/s." },
+    "seo_content": "Convert Megabits to Megabytes to understand your actual internet download speed."
+  },
+  {
+    "slug": "gigabits-to-gigabytes-converter",
+    "title": "Gigabits (Gb) to Gigabytes (GB) Converter",
+    "category": "unit",
+    "from_unit": "Gb",
+    "data": { "main_val": "0.125 GB", "label_1": "Byte Rule", "val_1": "/ 8", "label_2": "Network", "val_2": "Fiber", "extra": "A 1 Gbps connection allows a theoretical transfer of 0.125 Gigabytes per second." },
+    "seo_content": "Gb to GB conversion. Critical for evaluating server port speeds and high-speed fiber links."
   }
 ]
