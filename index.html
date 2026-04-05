@@ -23,15 +23,21 @@
 
             // Carichiamo i dati dal tuo file data.json
             useEffect(() => {
+    // Cerchiamo il parametro "page" o l'ultima parte dell'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get('page');
+    const pathSlug = window.location.pathname.split('/').pop();
+    
+    const targetSlug = pageParam || pathSlug || 'cidr-to-subnet-mask-slash-24';
+
     fetch('/data.json')
         .then(response => response.json())
         .then(json => {
-            // Cerca nel JSON l'elemento che corrisponde al nome nella barra degli indirizzi
-            const path = window.location.pathname.split('/').pop();
-            const currentTool = json.find(t => t.slug === path) || json[0];
+            const currentTool = json.find(t => t.slug === targetSlug) || json[0];
             setData(currentTool);
+            document.title = currentTool.title + " | PureCalc.io";
         })
-        .catch(err => console.error("Errore:", err));
+        .catch(err => console.error("Errore caricamento:", err));
 }, []);
 
             if (!data) return <div class="p-10 text-center font-sans">Loading awesome tools...</div>;
