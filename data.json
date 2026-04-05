@@ -5,7 +5,7 @@
     "category": "networking",
     "from_unit": "/1",
     "data": { "main_val": "128.0.0.0", "label_1": "Total IPs", "val_1": "2,147,483,648", "label_2": "Usable", "val_2": "2,147,483,646", "extra": "Binary: 10000000.00000000.00000000.00000000" },
-    "seo_content": "A /1 subnet mask splits the entire IPv4 address space in half. It is rarely used in local networking but essential for global routing tables."
+    "seo_content": "A /1 subnet mask splits the entire IPv4 address space in half. It is essential for global routing tables."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-8",
@@ -13,7 +13,7 @@
     "category": "networking",
     "from_unit": "/8",
     "data": { "main_val": "255.0.0.0", "label_1": "Total IPs", "val_1": "16,777,216", "label_2": "Usable", "val_2": "16,777,214", "extra": "Binary: 11111111.00000000.00000000.00000000" },
-    "seo_content": "The /8 prefix is the classic Class A network, used by large organizations and ISPs for massive internal address spacing."
+    "seo_content": "The /8 prefix is the classic Class A network, used for massive internal address spacing."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-16",
@@ -21,70 +21,78 @@
     "category": "networking",
     "from_unit": "/16",
     "data": { "main_val": "255.255.0.0", "label_1": "Total IPs", "val_1": "65,536", "label_2": "Usable", "val_2": "65,534", "extra": "Binary: 11111111.11111111.00000000.00000000" },
-    "seo_content": "A /16 subnet mask provides 65,534 usable addresses, common in corporate headquarters and data center environments."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-20",
-    "title": "/20 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/20",
-    "data": { "main_val": "255.255.240.0", "label_1": "Total IPs", "val_1": "4,096", "label_2": "Usable", "val_2": "4,094", "extra": "Binary: 11111111.11111111.11110000.00000000" },
-    "seo_content": "The /20 mask is ideal for large campuses, offering over 4,000 usable host addresses."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-21",
-    "title": "/21 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/21",
-    "data": { "main_val": "255.255.248.0", "label_1": "Total IPs", "val_1": "2,048", "label_2": "Usable", "val_2": "2,046", "extra": "Binary: 11111111.11111111.11111000.00000000" },
-    "seo_content": "A /21 subnet provides 2,046 usable IP addresses, perfect for large-scale enterprise departments."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-22",
-    "title": "/22 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/22",
-    "data": { "main_val": "255.255.252.0", "label_1": "Total IPs", "val_1": "1,024", "label_2": "Usable", "val_2": "1,022", "extra": "Binary: 11111111.11111111.11111100.00000000" },
-    "seo_content": "The /22 prefix allows for 1,022 hosts, commonly used to aggregate multiple /24 networks."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-23",
-    "title": "/23 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/23",
-    "data": { "main_val": "255.255.254.0", "label_1": "Total IPs", "val_1": "512", "label_2": "Usable", "val_2": "510", "extra": "Binary: 11111111.11111111.11111110.00000000" },
-    "seo_content": "A /23 subnet mask provides exactly 510 usable IP addresses, doubling the capacity of a standard /24."
+    "seo_content": "A /16 subnet mask provides 65,534 usable addresses, common in corporate headquarters."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-24",
-    "title": "/24 CIDR to Subnet Mask Converter",
+    "title": "/24 CIDR (Class C) to Subnet Mask",
     "category": "networking",
     "from_unit": "/24",
     "data": { "main_val": "255.255.255.0", "label_1": "Total IPs", "val_1": "256", "label_2": "Usable", "val_2": "254", "extra": "Binary: 11111111.11111111.11111111.00000000" },
-    "seo_content": "A /24 subnet mask is the standard for small business networks, offering 254 usable IP addresses."
+    "seo_content": "The standard /24 mask is the most used for local LANs and small office networks."
   },
   {
-    "slug": "cidr-to-subnet-mask-slash-30",
-    "title": "/30 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/30",
-    "data": { "main_val": "255.255.255.252", "label_1": "Total IPs", "val_1": "4", "label_2": "Usable", "val_2": "2", "extra": "Binary: 11111111.11111111.11111111.11111100" },
-    "seo_content": "Used for point-to-point router links, a /30 mask minimizes IP waste."
-  },
-  {
-    "slug": "bits-to-bytes-converter",
-    "title": "Bits to Bytes Converter",
+    "slug": "bits-to-kilobits-converter",
+    "title": "Bits to Kilobits (Kb) Converter",
     "category": "unit",
     "from_unit": "Bits",
-    "data": { "main_val": "0.125 Bytes", "label_1": "Formula", "val_1": "/ 8", "label_2": "Ratio", "val_2": "1:8", "extra": "8 bits = 1 Byte. Bits are for speed, Bytes for size." },
-    "seo_content": "Convert bits to bytes instantly. 8 bits always equal 1 byte in standard computing."
+    "data": { "main_val": "0.001 Kb", "label_1": "Base 10", "val_1": "/ 1000", "label_2": "Ratio", "val_2": "1000:1", "extra": "1 Kilobit is exactly 1000 bits in standard networking terminology." },
+    "seo_content": "Convert bits to kilobits instantly. Essential for calculating low-bandwidth legacy connections."
+  },
+  {
+    "slug": "kilobits-to-megabits-converter",
+    "title": "Kilobits (Kb) to Megabits (Mb) Converter",
+    "category": "unit",
+    "from_unit": "Kb",
+    "data": { "main_val": "0.001 Mb", "label_1": "Formula", "val_1": "/ 1000", "label_2": "Type", "val_2": "Decimal", "extra": "1000 Kilobits = 1 Megabit. This is the standard for ISP speed ratings." },
+    "seo_content": "Calculate Megabits from Kilobits. Most internet speeds are measured using this decimal conversion."
+  },
+  {
+    "slug": "megabits-to-gigabits-converter",
+    "title": "Megabits (Mb) to Gigabits (Gb) Converter",
+    "category": "unit",
+    "from_unit": "Mb",
+    "data": { "main_val": "0.001 Gb", "label_1": "Formula", "val_1": "/ 1000", "label_2": "Network", "val_2": "Fiber", "extra": "A 1000 Mbps connection is equivalent to a 1 Gbps Fiber line." },
+    "seo_content": "Convert Mbps to Gbps. High-speed networking often requires converting between these two units."
+  },
+  {
+    "slug": "kilobytes-to-megabytes-converter",
+    "title": "Kilobytes (KB) to Megabytes (MB) Converter",
+    "category": "unit",
+    "from_unit": "KB",
+    "data": { "main_val": "0.000976 MB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Ratio", "val_2": "1024:1", "extra": "In operating systems like Windows, 1024 KB = 1 MB." },
+    "seo_content": "Convert KB to MB using the precise binary 1024 standard used by computers."
   },
   {
     "slug": "megabytes-to-gigabytes-converter",
     "title": "Megabytes (MB) to Gigabytes (GB) Converter",
     "category": "unit",
     "from_unit": "MB",
-    "data": { "main_val": "0.000976 GB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Decimal", "val_2": "/ 1000", "extra": "1024 Megabytes = 1 Gigabyte in binary (RAM), 1000 MB = 1 GB in decimal (Disk)." },
-    "seo_content": "Easily convert MB to GB using the 1024 binary standard."
+    "data": { "main_val": "0.000976 GB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Decimal", "val_2": "/ 1000", "extra": "1024 MB = 1 GB. Note: RAM uses 1024, while most HDD makers use 1000." },
+    "seo_content": "Fast MB to GB conversion for RAM and disk space calculations."
+  },
+  {
+    "slug": "gigabytes-to-terabytes-converter",
+    "title": "Gigabytes (GB) to Terabytes (TB) Converter",
+    "category": "unit",
+    "from_unit": "GB",
+    "data": { "main_val": "0.000976 TB", "label_1": "Formula", "val_1": "/ 1024", "label_2": "Storage", "val_2": "Tera", "extra": "1024 Gigabytes equal 1 Terabyte in binary storage systems." },
+    "seo_content": "Accurately convert GB to TB for server storage and cloud capacity planning."
+  },
+  {
+    "slug": "terabytes-to-petabytes-converter",
+    "title": "Terabytes (TB) to Petabytes (PB) Converter",
+    "category": "unit",
+    "from_unit": "TB",
+    "data": { "main_val": "0.000976 PB", "label_1": "Enterprise", "val_1": "/ 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1024 Terabytes = 1 Petabyte. This scale is used in Big Data and Data Centers." },
+    "seo_content": "Convert TB to PB. A must-have tool for data architects and enterprise storage managers."
+  },
+  {
+    "slug": "kilobits-to-kilobytes-converter",
+    "title": "Kilobits (Kb) to Kilobytes (KB) Converter",
+    "category": "unit",
+    "from_unit": "Kb",
+    "data": { "main_val": "0.125 KB", "label_1": "Byte Ratio", "val_1": "/ 8", "label_2": "Standard", "val_2": "Binary", "extra": "Since 8 bits = 1 Byte, 8 Kilobits equal 1 Kilobyte." },
+    "seo_content": "The most accurate way to convert networking kilobits to storage kilobytes."
   }
 ]
