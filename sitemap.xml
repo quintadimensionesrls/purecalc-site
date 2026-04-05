@@ -2,36 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://purecalc.io/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-24</loc>
+    <lastmod>2026-04-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-25</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-26</loc>
+    <lastmod>2026-04-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-30</loc>
-    <priority>0.8</priority>
-  </url>
-</urlset><?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://purecalc.io/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-24</loc>
+    <lastmod>2026-04-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-25</loc>
+    <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-32</loc>
+    <lastmod>2026-04-05</lastmod>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://purecalc.io/convert/bits-to-bytes-converter</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-30</loc>
-    <priority>0.8</priority>
+    <loc>https://purecalc.io/convert/bytes-to-bits-converter</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://purecalc.io/convert/megabytes-to-gigabytes-converter</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://purecalc.io/convert/gigabytes-to-terabytes-converter</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://purecalc.io/convert/megabits-to-megabytes-converter</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
 </urlset>
