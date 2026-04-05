@@ -5,7 +5,7 @@
     "category": "networking",
     "from_unit": "/1",
     "data": { "main_val": "128.0.0.0", "label_1": "Total IPs", "val_1": "2,147,483,648", "label_2": "Usable", "val_2": "2,147,483,646", "extra": "Binary: 10000000.00000000.00000000.00000000" },
-    "seo_content": "A /1 subnet mask splits the entire IPv4 address space in half. It is essential for global routing tables."
+    "seo_content": "A /1 subnet mask splits the entire IPv4 address space in half."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-8",
@@ -21,7 +21,7 @@
     "category": "networking",
     "from_unit": "/16",
     "data": { "main_val": "255.255.0.0", "label_1": "Total IPs", "val_1": "65,536", "label_2": "Usable", "val_2": "65,534", "extra": "Binary: 11111111.11111111.00000000.00000000" },
-    "seo_content": "A /16 subnet mask provides 65,534 usable addresses, common in corporate headquarters."
+    "seo_content": "A /16 subnet mask provides 65,534 usable addresses."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-24",
@@ -29,54 +29,46 @@
     "category": "networking",
     "from_unit": "/24",
     "data": { "main_val": "255.255.255.0", "label_1": "Total IPs", "val_1": "256", "label_2": "Usable", "val_2": "254", "extra": "Binary: 11111111.11111111.11111111.00000000" },
-    "seo_content": "The standard /24 mask (Class C) is the most used for local LANs and small office networks."
+    "seo_content": "The standard /24 mask (Class C) is the most used for local LANs."
   },
   {
-    "slug": "terabytes-to-gigabytes-converter",
-    "title": "Terabytes (TB) to Gigabytes (GB) Converter",
+    "slug": "exabytes-to-petabytes-converter",
+    "title": "Exabytes (EB) to Petabytes (PB) Converter",
     "category": "unit",
-    "from_unit": "TB",
-    "data": { "main_val": "1024 GB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Decimal", "val_2": "x 1000", "extra": "1 TB is 1024 GB in binary systems (Windows) or 1000 GB in decimal (Disk manufacturers)." },
-    "seo_content": "Quickly convert TB to GB. Understanding the 1024 vs 1000 ratio is key for storage management."
+    "from_unit": "EB",
+    "data": { "main_val": "1024 PB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Scale", "val_2": "Exa", "extra": "1 Exabyte is 1024 Petabytes. This scale is used for global data center traffic." },
+    "seo_content": "Convert EB to PB. Essential for calculating planetary-scale data storage."
   },
   {
-    "slug": "gigabytes-to-megabytes-converter",
-    "title": "Gigabytes (GB) to Megabytes (MB) Converter",
-    "category": "unit",
-    "from_unit": "GB",
-    "data": { "main_val": "1024 MB", "label_1": "Formula", "val_1": "x 1024", "label_2": "Type", "val_2": "Binary", "extra": "Standard conversion used by RAM and Operating Systems: 1 GB = 1024 MB." },
-    "seo_content": "Convert GB to MB accurately. Ideal for checking file sizes and memory capacity."
-  },
-  {
-    "slug": "megabytes-to-kilobytes-converter",
-    "title": "Megabytes (MB) to Kilobytes (KB) Converter",
-    "category": "unit",
-    "from_unit": "MB",
-    "data": { "main_val": "1024 KB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Ratio", "val_2": "1024:1", "extra": "1 Megabyte equals 1024 Kilobytes in computing standards." },
-    "seo_content": "Instantly calculate KB from MB. Essential for web optimization and small file management."
-  },
-  {
-    "slug": "petabytes-to-terabytes-converter",
-    "title": "Petabytes (PB) to Terabytes (TB) Converter",
+    "slug": "petabytes-to-exabytes-converter",
+    "title": "Petabytes (PB) to Exabytes (EB) Converter",
     "category": "unit",
     "from_unit": "PB",
-    "data": { "main_val": "1024 TB", "label_1": "Big Data", "val_1": "x 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1 Petabyte is equivalent to 1024 Terabytes. Used in cloud infrastructure." },
-    "seo_content": "Convert PB to TB. High-level conversion for data center and enterprise storage solutions."
+    "data": { "main_val": "0.000976 EB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1024 PB = 1 EB. Petabytes are common in big data clusters." },
+    "seo_content": "Accurately convert PB to EB for enterprise cloud reporting."
   },
   {
-    "slug": "megabits-to-megabytes-converter",
-    "title": "Megabits (Mb) to Megabytes (MB) Converter",
+    "slug": "zettabytes-to-exabytes-converter",
+    "title": "Zettabytes (ZB) to Exabytes (EB) Converter",
+    "category": "unit",
+    "from_unit": "ZB",
+    "data": { "main_val": "1024 EB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Scale", "val_2": "Zetta", "extra": "1 Zettabyte equals 1024 Exabytes." },
+    "seo_content": "Zettabyte conversion for monitoring global internet traffic trends."
+  },
+  {
+    "slug": "megabits-to-kilobits-converter",
+    "title": "Megabits (Mb) to Kilobits (Kb) Converter",
     "category": "unit",
     "from_unit": "Mb",
-    "data": { "main_val": "0.125 MB", "label_1": "Ratio", "val_1": "1:8", "label_2": "Calculation", "val_2": "/ 8", "extra": "8 Megabits make 1 Megabyte. This explains why a 100 Mbps line downloads at 12.5 MB/s." },
-    "seo_content": "Convert Megabits to Megabytes to understand your actual internet download speed."
+    "data": { "main_val": "1000 Kb", "label_1": "Formula", "val_1": "x 1000", "label_2": "Type", "val_2": "Decimal", "extra": "In networking, 1 Mb is usually 1000 Kb." },
+    "seo_content": "Standard Mb to Kb conversion for bandwidth and VoIP stream analysis."
   },
   {
-    "slug": "gigabits-to-gigabytes-converter",
-    "title": "Gigabits (Gb) to Gigabytes (GB) Converter",
+    "slug": "gigabytes-to-kilobytes-converter",
+    "title": "Gigabytes (GB) to Kilobytes (KB) Converter",
     "category": "unit",
-    "from_unit": "Gb",
-    "data": { "main_val": "0.125 GB", "label_1": "Byte Rule", "val_1": "/ 8", "label_2": "Network", "val_2": "Fiber", "extra": "A 1 Gbps connection allows a theoretical transfer of 0.125 Gigabytes per second." },
-    "seo_content": "Gb to GB conversion. Critical for evaluating server port speeds and high-speed fiber links."
+    "from_unit": "GB",
+    "data": { "main_val": "1,048,576 KB", "label_1": "Binary", "val_1": "x 1024²", "label_2": "Ratio", "val_2": "1048576:1", "extra": "1 GB = 1024 MB = 1,048,576 KB." },
+    "seo_content": "Deep conversion from GB to KB. Crucial for understanding legacy system constraints."
   }
 ]
