@@ -6,7 +6,16 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
+<url>
+  <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-8</loc>
+  <lastmod>2026-04-05</lastmod>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-16</loc>
+  <lastmod>2026-04-05</lastmod>
+  <priority>0.8</priority>
+</url>
   <url>
     <loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-24</loc>
     <lastmod>2026-04-05</lastmod>
