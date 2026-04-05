@@ -1,51 +1,67 @@
 [
   {
+    "slug": "cidr-to-subnet-mask-slash-1",
+    "title": "/1 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/1",
+    "data": { "main_val": "128.0.0.0", "label_1": "Total IPs", "val_1": "2,147,483,648", "label_2": "Usable", "val_2": "2,147,483,646", "extra": "Binary: 10000000.00000000.00000000.00000000" },
+    "seo_content": "A /1 subnet mask splits the entire IPv4 address space in half. It is rarely used in local networking but essential for global routing tables."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-8",
+    "title": "/8 CIDR (Class A) to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/8",
+    "data": { "main_val": "255.0.0.0", "label_1": "Total IPs", "val_1": "16,777,216", "label_2": "Usable", "val_2": "16,777,214", "extra": "Binary: 11111111.00000000.00000000.00000000" },
+    "seo_content": "The /8 prefix is the classic Class A network, used by large organizations and ISPs for massive internal address spacing."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-16",
+    "title": "/16 CIDR (Class B) to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/16",
+    "data": { "main_val": "255.255.0.0", "label_1": "Total IPs", "val_1": "65,536", "label_2": "Usable", "val_2": "65,534", "extra": "Binary: 11111111.11111111.00000000.00000000" },
+    "seo_content": "A /16 subnet mask provides 65,534 usable addresses, common in corporate headquarters and data center environments."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-20",
+    "title": "/20 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/20",
+    "data": { "main_val": "255.255.240.0", "label_1": "Total IPs", "val_1": "4,096", "label_2": "Usable", "val_2": "4,094", "extra": "Binary: 11111111.11111111.11110000.00000000" },
+    "seo_content": "The /20 mask is ideal for large campuses, offering over 4,000 usable host addresses."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-21",
+    "title": "/21 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/21",
+    "data": { "main_val": "255.255.248.0", "label_1": "Total IPs", "val_1": "2,048", "label_2": "Usable", "val_2": "2,046", "extra": "Binary: 11111111.11111111.11111000.00000000" },
+    "seo_content": "A /21 subnet provides 2,046 usable IP addresses, perfect for large-scale enterprise departments."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-22",
+    "title": "/22 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/22",
+    "data": { "main_val": "255.255.252.0", "label_1": "Total IPs", "val_1": "1,024", "label_2": "Usable", "val_2": "1,022", "extra": "Binary: 11111111.11111111.11111100.00000000" },
+    "seo_content": "The /22 prefix allows for 1,022 hosts, commonly used to aggregate multiple /24 networks."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-23",
+    "title": "/23 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/23",
+    "data": { "main_val": "255.255.254.0", "label_1": "Total IPs", "val_1": "512", "label_2": "Usable", "val_2": "510", "extra": "Binary: 11111111.11111111.11111110.00000000" },
+    "seo_content": "A /23 subnet mask provides exactly 510 usable IP addresses, doubling the capacity of a standard /24."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-24",
     "title": "/24 CIDR to Subnet Mask Converter",
     "category": "networking",
     "from_unit": "/24",
     "data": { "main_val": "255.255.255.0", "label_1": "Total IPs", "val_1": "256", "label_2": "Usable", "val_2": "254", "extra": "Binary: 11111111.11111111.11111111.00000000" },
     "seo_content": "A /24 subnet mask is the standard for small business networks, offering 254 usable IP addresses."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-25",
-    "title": "/25 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/25",
-    "data": { "main_val": "255.255.255.128", "label_1": "Total IPs", "val_1": "128", "label_2": "Usable", "val_2": "126", "extra": "Binary: 11111111.11111111.11111111.10000000" },
-    "seo_content": "A /25 subnet splits a Class C network into two separate subnets of 126 usable hosts each."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-26",
-    "title": "/26 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/26",
-    "data": { "main_val": "255.255.255.192", "label_1": "Total IPs", "val_1": "64", "label_2": "Usable", "val_2": "62", "extra": "Binary: 11111111.11111111.11111111.11000000" },
-    "seo_content": "A /26 prefix provides 62 usable IP addresses, ideal for small departments or specific VLANs."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-27",
-    "title": "/27 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/27",
-    "data": { "main_val": "255.255.255.224", "label_1": "Total IPs", "val_1": "32", "label_2": "Usable", "val_2": "30", "extra": "Binary: 11111111.11111111.11111111.11100000" },
-    "seo_content": "With a /27 mask, you get 30 usable IP addresses. Great for segmenting small office networks."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-28",
-    "title": "/28 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/28",
-    "data": { "main_val": "255.255.255.240", "label_1": "Total IPs", "val_1": "16", "label_2": "Usable", "val_2": "14", "extra": "Binary: 11111111.11111111.11111111.11110000" },
-    "seo_content": "A /28 subnet mask is often used for small server clusters, providing 14 usable IP addresses."
-  },
-  {
-    "slug": "cidr-to-subnet-mask-slash-29",
-    "title": "/29 CIDR to Subnet Mask Converter",
-    "category": "networking",
-    "from_unit": "/29",
-    "data": { "main_val": "255.255.255.248", "label_1": "Total IPs", "val_1": "8", "label_2": "Usable", "val_2": "6", "extra": "Binary: 11111111.11111111.11111111.11111000" },
-    "seo_content": "A /29 prefix is the standard for small business public IP blocks, offering 6 usable addresses."
   },
   {
     "slug": "cidr-to-subnet-mask-slash-30",
@@ -56,14 +72,6 @@
     "seo_content": "Used for point-to-point router links, a /30 mask minimizes IP waste."
   },
   {
-    "slug": "cidr-to-subnet-mask-slash-32",
-    "title": "/32 CIDR (Host Mask) Details",
-    "category": "networking",
-    "from_unit": "/32",
-    "data": { "main_val": "255.255.255.255", "label_1": "Total IPs", "val_1": "1", "label_2": "Usable", "val_2": "1", "extra": "Binary: 11111111.11111111.11111111.11111111" },
-    "seo_content": "A /32 mask represents a single host or loopback address in networking."
-  },
-  {
     "slug": "bits-to-bytes-converter",
     "title": "Bits to Bytes Converter",
     "category": "unit",
@@ -72,59 +80,11 @@
     "seo_content": "Convert bits to bytes instantly. 8 bits always equal 1 byte in standard computing."
   },
   {
-    "slug": "bytes-to-bits-converter",
-    "title": "Bytes to Bits Converter",
-    "category": "unit",
-    "from_unit": "Bytes",
-    "data": { "main_val": "8 Bits", "label_1": "Formula", "val_1": "x 8", "label_2": "Ratio", "val_2": "8:1", "extra": "Multiply your byte count by 8 to get the total number of bits." },
-    "seo_content": "Quickly find out how many bits are in your bytes. Essential for network throughput calculations."
-  },
-  {
     "slug": "megabytes-to-gigabytes-converter",
     "title": "Megabytes (MB) to Gigabytes (GB) Converter",
     "category": "unit",
     "from_unit": "MB",
     "data": { "main_val": "0.000976 GB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Decimal", "val_2": "/ 1000", "extra": "1024 Megabytes = 1 Gigabyte in binary (RAM), 1000 MB = 1 GB in decimal (Disk)." },
     "seo_content": "Easily convert MB to GB using the 1024 binary standard."
-  },
-  {
-    "slug": "gigabytes-to-megabytes-converter",
-    "title": "Gigabytes (GB) to Megabytes (MB) Converter",
-    "category": "unit",
-    "from_unit": "GB",
-    "data": { "main_val": "1024 MB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Decimal", "val_2": "x 1000", "extra": "One Gigabyte contains 1024 Megabytes according to the JEDEC binary standard." },
-    "seo_content": "Find out exactly how many Megabytes are in your Gigabytes."
-  },
-  {
-    "slug": "gigabytes-to-terabytes-converter",
-    "title": "Gigabytes (GB) to Terabytes (TB) Converter",
-    "category": "unit",
-    "from_unit": "GB",
-    "data": { "main_val": "0.000976 TB", "label_1": "Binary", "val_1": "/ 1024", "label_2": "Decimal", "val_2": "/ 1000", "extra": "1024 Gigabytes make up 1 Terabyte." },
-    "seo_content": "Standard converter for high-capacity storage drives from Gigabytes to Terabytes."
-  },
-  {
-    "slug": "terabytes-to-gigabytes-converter",
-    "title": "Terabytes (TB) to Gigabytes (GB) Converter",
-    "category": "unit",
-    "from_unit": "TB",
-    "data": { "main_val": "1024 GB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Decimal", "val_2": "x 1000", "extra": "1 Terabyte is equal to 1024 Gigabytes." },
-    "seo_content": "Convert TB to GB instantly. Perfect for NAS and Server storage planning."
-  },
-  {
-    "slug": "kilobits-to-megabits-converter",
-    "title": "Kilobits (Kbps) to Megabits (Mbps) Converter",
-    "category": "unit",
-    "from_unit": "Kbps",
-    "data": { "main_val": "0.001 Mbps", "label_1": "Formula", "val_1": "/ 1000", "label_2": "Context", "val_2": "Internet", "extra": "Networking speeds usually use decimal base (1000) for bandwidth." },
-    "seo_content": "Convert your connection speed from Kbps to Mbps."
-  },
-  {
-    "slug": "megabits-to-megabytes-converter",
-    "title": "Megabits (Mbps) to Megabytes (MB/s) Converter",
-    "category": "unit",
-    "from_unit": "Mbps",
-    "data": { "main_val": "0.125 MB/s", "label_1": "Formula", "val_1": "/ 8", "label_2": "Time", "val_2": "Download", "extra": "A 100 Mbps connection downloads at 12.5 MB per second." },
-    "seo_content": "Calculate your real download speed by converting Megabits to Megabytes."
   }
 ]
