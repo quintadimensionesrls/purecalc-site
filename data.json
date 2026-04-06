@@ -16,6 +16,62 @@
     "seo_content": "A /2 subnet mask covers a quarter of the IPv4 space."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-3",
+    "title": "/3 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/3",
+    "data": { "main_val": "224.0.0.0", "label_1": "Total IPs", "val_1": "536,870,912", "label_2": "Usable", "val_2": "536,870,910", "extra": "Binary: 11100000.00000000.00000000.00000000" },
+    "seo_content": "Convert /3 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-4",
+    "title": "/4 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/4",
+    "data": { "main_val": "240.0.0.0", "label_1": "Total IPs", "val_1": "268,435,456", "label_2": "Usable", "val_2": "268,435,454", "extra": "Binary: 11110000.00000000.00000000.00000000" },
+    "seo_content": "Convert /4 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-5",
+    "title": "/5 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/5",
+    "data": { "main_val": "248.0.0.0", "label_1": "Total IPs", "val_1": "134,217,728", "label_2": "Usable", "val_2": "134,217,726", "extra": "Binary: 11111000.00000000.00000000.00000000" },
+    "seo_content": "Convert /5 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-6",
+    "title": "/6 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/6",
+    "data": { "main_val": "252.0.0.0", "label_1": "Total IPs", "val_1": "67,108,864", "label_2": "Usable", "val_2": "67,108,862", "extra": "Binary: 11111100.00000000.00000000.00000000" },
+    "seo_content": "Convert /6 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-7",
+    "title": "/7 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/7",
+    "data": { "main_val": "254.0.0.0", "label_1": "Total IPs", "val_1": "33,554,432", "label_2": "Usable", "val_2": "33,554,430", "extra": "Binary: 11111110.00000000.00000000.00000000" },
+    "seo_content": "Convert /7 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-8",
+    "title": "/8 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/8",
+    "data": { "main_val": "255.0.0.0", "label_1": "Total IPs", "val_1": "16,777,216", "label_2": "Usable", "val_2": "16,777,214", "extra": "Binary: 11111111.00000000.00000000.00000000" },
+    "seo_content": "Convert /8 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-9",
+    "title": "/9 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/9",
+    "data": { "main_val": "255.128.0.0", "label_1": "Total IPs", "val_1": "8,388,608", "label_2": "Usable", "val_2": "8,388,606", "extra": "Binary: 11111111.10000000.00000000.00000000" },
+    "seo_content": "Convert /9 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-10",
     "title": "/10 CIDR to Subnet Mask Converter",
     "category": "networking",
