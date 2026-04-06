@@ -198,5 +198,5 @@
     "from_unit": "Bytes",
     "data": { "main_val": "8 Bits", "label_1": "Formula", "val_1": "x 8", "label_2": "Structure", "val_2": "8-bit", "extra": "One byte consists of 8 bits. This is the fundamental building block of digital information." },
     "seo_content": "Calculate the number of bits in any given amount of bytes instantly."
-  },
+  }
 ]
