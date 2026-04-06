@@ -160,6 +160,38 @@
     "seo_content": "A /20 subnet mask is a standard size for medium-to-large corporate VLANs."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-21",
+    "title": "/21 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/21",
+    "data": { "main_val": "255.255.248.0", "label_1": "Total IPs", "val_1": "2,048", "label_2": "Usable", "val_2": "2,046", "extra": "Binary: 11111111.11111111.11111000.00000000" },
+    "seo_content": "Convert /21 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-22",
+    "title": "/22 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/22",
+    "data": { "main_val": "255.255.252.0", "label_1": "Total IPs", "val_1": "1,024", "label_2": "Usable", "val_2": "1,022", "extra": "Binary: 11111111.11111111.11111100.00000000" },
+    "seo_content": "Convert /22 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-23",
+    "title": "/23 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/23",
+    "data": { "main_val": "255.255.254.0", "label_1": "Total IPs", "val_1": "512", "label_2": "Usable", "val_2": "510", "extra": "Binary: 11111111.11111111.11111110.00000000" },
+    "seo_content": "Convert /23 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-24",
+    "title": "/24 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/24",
+    "data": { "main_val": "255.255.255.0", "label_1": "Total IPs", "val_1": "256", "label_2": "Usable", "val_2": "254", "extra": "Binary: 11111111.11111111.11111111.00000000" },
+    "seo_content": "Convert /24 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-25",
     "title": "/25 CIDR to Subnet Mask Converter",
     "category": "networking",
