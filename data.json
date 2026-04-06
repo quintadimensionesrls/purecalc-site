@@ -200,6 +200,30 @@
     "seo_content": "The /25 mask splits a standard Class C network into two subnets."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-26",
+    "title": "/26 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/26",
+    "data": { "main_val": "255.255.255.192", "label_1": "Total IPs", "val_1": "64", "label_2": "Usable", "val_2": "62", "extra": "Binary: 11111111.11111111.11111111.11000000" },
+    "seo_content": "Convert /26 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-27",
+    "title": "/27 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/27",
+    "data": { "main_val": "255.255.255.224", "label_1": "Total IPs", "val_1": "32", "label_2": "Usable", "val_2": "30", "extra": "Binary: 11111111.11111111.11111111.11100000" },
+    "seo_content": "Convert /27 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-28",
+    "title": "/28 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/28",
+    "data": { "main_val": "255.255.255.240", "label_1": "Total IPs", "val_1": "16", "label_2": "Usable", "val_2": "14", "extra": "Binary: 11111111.11111111.11111111.11110000" },
+    "seo_content": "Convert /28 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-29",
     "title": "/29 CIDR to Subnet Mask Converter",
     "category": "networking",
