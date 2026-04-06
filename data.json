@@ -128,6 +128,30 @@
     "seo_content": "A /16 CIDR prefix (Class B) provides 65,534 usable IP addresses."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-17",
+    "title": "/17 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/17",
+    "data": { "main_val": "255.255.128.0", "label_1": "Total IPs", "val_1": "32,768", "label_2": "Usable", "val_2": "32,766", "extra": "Binary: 11111111.11111111.10000000.00000000" },
+    "seo_content": "Convert /17 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-18",
+    "title": "/18 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/18",
+    "data": { "main_val": "255.255.192.0", "label_1": "Total IPs", "val_1": "16,384", "label_2": "Usable", "val_2": "16,382", "extra": "Binary: 11111111.11111111.11000000.00000000" },
+    "seo_content": "Convert /18 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-19",
+    "title": "/19 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/19",
+    "data": { "main_val": "255.255.224.0", "label_1": "Total IPs", "val_1": "8,192", "label_2": "Usable", "val_2": "8,190", "extra": "Binary: 11111111.11111111.11100000.00000000" },
+    "seo_content": "Convert /19 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-20",
     "title": "/20 CIDR to Subnet Mask Converter",
     "category": "networking",
