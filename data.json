@@ -54,7 +54,7 @@
     "from_unit": "YB",
     "data": { "main_val": "1024 ZB", "label_1": "Max Scale", "val_1": "x 1024", "label_2": "Name", "val_2": "Yotta", "extra": "A Yottabyte is the largest unit recognized by the SI system. It is 1024 Zettabytes." },
     "seo_content": "Convert Yottabytes to Zettabytes. The ultimate tool for the most extreme data calculations possible."
-  }
+  },
   {
     "slug": "cidr-to-subnet-mask-slash-1",
     "title": "/1 CIDR to Subnet Mask Converter",
