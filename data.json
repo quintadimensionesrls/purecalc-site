@@ -80,6 +80,46 @@
     "seo_content": "The /10 prefix is often used for large infrastructure allocations."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-11",
+    "title": "/11 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/11",
+    "data": { "main_val": "255.224.0.0", "label_1": "Total IPs", "val_1": "2,097,152", "label_2": "Usable", "val_2": "2,097,150", "extra": "Binary: 11111111.11100000.00000000.00000000" },
+    "seo_content": "Convert /11 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-12",
+    "title": "/12 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/12",
+    "data": { "main_val": "255.240.0.0", "label_1": "Total IPs", "val_1": "1,048,576", "label_2": "Usable", "val_2": "1,048,574", "extra": "Binary: 11111111.11110000.00000000.00000000" },
+    "seo_content": "Convert /12 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-13",
+    "title": "/13 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/13",
+    "data": { "main_val": "255.248.0.0", "label_1": "Total IPs", "val_1": "524,288", "label_2": "Usable", "val_2": "524,286", "extra": "Binary: 11111111.11111000.00000000.00000000" },
+    "seo_content": "Convert /13 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-14",
+    "title": "/14 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/14",
+    "data": { "main_val": "255.252.0.0", "label_1": "Total IPs", "val_1": "262,144", "label_2": "Usable", "val_2": "262,142", "extra": "Binary: 11111111.11111100.00000000.00000000" },
+    "seo_content": "Convert /14 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-15",
+    "title": "/15 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/15",
+    "data": { "main_val": "255.254.0.0", "label_1": "Total IPs", "val_1": "131,072", "label_2": "Usable", "val_2": "131,070", "extra": "Binary: 11111111.11111110.00000000.00000000" },
+    "seo_content": "Convert /15 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-16",
     "title": "/16 CIDR (Class B) to Subnet Mask",
     "category": "networking",
