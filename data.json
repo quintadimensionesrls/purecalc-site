@@ -16,6 +16,14 @@
     "seo_content": "The /10 prefix is often used for large infrastructure allocations."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-16",
+    "title": "/16 CIDR (Class B) to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/16",
+    "data": { "main_val": "255.255.0.0", "label_1": "Total IPs", "val_1": "65,536", "label_2": "Usable", "val_2": "65,534", "extra": "Binary: 11111111.11111111.00000000.00000000" },
+    "seo_content": "A /16 CIDR prefix (Class B) provides 65,534 usable IP addresses."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-20",
     "title": "/20 CIDR to Subnet Mask Converter",
     "category": "networking",
