@@ -1,5 +1,13 @@
 [
   {
+    "slug": "cidr-to-subnet-mask-slash-1",
+    "title": "/1 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/1",
+    "data": { "main_val": "128.0.0.0", "label_1": "Total IPs", "val_1": "2,147,483,648", "label_2": "Usable", "val_2": "2,147,483,646", "extra": "Binary: 10000000.00000000.00000000.00000000" },
+    "seo_content": "Convert /1 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-2",
     "title": "/2 CIDR to Subnet Mask Converter",
     "category": "networking",
