@@ -232,6 +232,22 @@
     "seo_content": "A /29 subnet is ideal for small point-to-point links with a few usable IPs."
   },
   {
+    "slug": "cidr-to-subnet-mask-slash-30",
+    "title": "/30 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/30",
+    "data": { "main_val": "255.255.255.252", "label_1": "Total IPs", "val_1": "4", "label_2": "Usable", "val_2": "2", "extra": "Binary: 11111111.11111111.11111111.11111100" },
+    "seo_content": "Convert /30 CIDR to Subnet Mask."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-31",
+    "title": "/31 CIDR to Subnet Mask",
+    "category": "networking",
+    "from_unit": "/31",
+    "data": { "main_val": "255.255.255.254", "label_1": "Total IPs", "val_1": "2", "label_2": "Usable", "val_2": "2", "extra": "Binary: 11111111.11111111.11111111.11111110" },
+    "seo_content": "Convert /31 CIDR to Subnet Mask."
+  },
+  {
     "slug": "cidr-to-subnet-mask-slash-32",
     "title": "/32 CIDR to Subnet Mask Converter",
     "category": "networking",
