@@ -1,5 +1,53 @@
 [
   {
+    "slug": "cidr-to-subnet-mask-slash-2",
+    "title": "/2 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/2",
+    "data": { "main_val": "192.0.0.0", "label_1": "Total IPs", "val_1": "1,073,741,824", "label_2": "Usable", "val_2": "1,073,741,822", "extra": "Binary: 11000000.00000000.00000000.00000000" },
+    "seo_content": "A /2 subnet mask covers a quarter of the IPv4 space."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-10",
+    "title": "/10 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/10",
+    "data": { "main_val": "255.192.0.0", "label_1": "Total IPs", "val_1": "4,194,304", "label_2": "Usable", "val_2": "4,194,302", "extra": "Binary: 11111111.11000000.00000000.00000000" },
+    "seo_content": "The /10 prefix is often used for large infrastructure allocations."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-20",
+    "title": "/20 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/20",
+    "data": { "main_val": "255.255.240.0", "label_1": "Total IPs", "val_1": "4,096", "label_2": "Usable", "val_2": "4,094", "extra": "Binary: 11111111.11111111.11110000.00000000" },
+    "seo_content": "A /20 subnet mask is a standard size for medium-to-large corporate VLANs."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-25",
+    "title": "/25 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/25",
+    "data": { "main_val": "255.255.255.128", "label_1": "Total IPs", "val_1": "128", "label_2": "Usable", "val_2": "126", "extra": "Binary: 11111111.11111111.11111111.10000000" },
+    "seo_content": "The /25 mask splits a standard Class C network into two subnets."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-29",
+    "title": "/29 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/29",
+    "data": { "main_val": "255.255.255.248", "label_1": "Total IPs", "val_1": "8", "label_2": "Usable", "val_2": "6", "extra": "Binary: 11111111.11111111.11111111.11111000" },
+    "seo_content": "A /29 subnet is ideal for small point-to-point links with a few usable IPs."
+  },
+  {
+    "slug": "cidr-to-subnet-mask-slash-32",
+    "title": "/32 CIDR to Subnet Mask Converter",
+    "category": "networking",
+    "from_unit": "/32",
+    "data": { "main_val": "255.255.255.255", "label_1": "Total IPs", "val_1": "1", "label_2": "Usable", "val_2": "1", "extra": "Binary: 11111111.11111111.11111111.11111111" },
+    "seo_content": "A /32 prefix represents a single host IP address (Host Mask)."
+  },
+  {
     "slug": "petabytes-to-terabytes-converter",
     "title": "Petabytes (PB) to Terabytes (TB) Converter",
     "category": "unit",
