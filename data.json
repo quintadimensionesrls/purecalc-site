@@ -406,5 +406,165 @@
     "from_unit": "Bytes",
     "data": { "main_val": "8 Bits", "label_1": "Formula", "val_1": "x 8", "label_2": "Structure", "val_2": "8-bit", "extra": "One byte consists of 8 bits. This is the fundamental building block of digital information." },
     "seo_content": "Calculate the number of bits in any given amount of bytes instantly."
+  },
+  {
+    "slug": "seconds-to-hours-converter",
+    "title": "Seconds (s) to Hours (h) Converter",
+    "category": "time",
+    "from_unit": "s",
+    "data": { "main_val": "0.000277 h", "label_1": "Formula", "val_1": "/ 3600", "label_2": "Ratio", "val_2": "1:3600", "extra": "There are 3,600 seconds in one hour." },
+    "seo_content": "Convert seconds to hours. Useful for long duration timing and logistics."
+  },
+  {
+    "slug": "hours-to-seconds-converter",
+    "title": "Hours (h) to Seconds (s) Converter",
+    "category": "time",
+    "from_unit": "h",
+    "data": { "main_val": "3600 s", "label_1": "Formula", "val_1": "x 3600", "label_2": "Base", "val_2": "60x60", "extra": "One hour equals exactly 3,600 seconds." },
+    "seo_content": "Easily calculate how many seconds are in a specific number of hours."
+  },
+  {
+    "slug": "milliseconds-to-minutes-converter",
+    "title": "Milliseconds (ms) to Minutes (min) Converter",
+    "category": "time",
+    "from_unit": "ms",
+    "data": { "main_val": "1.666e-5 min", "label_1": "Formula", "val_1": "/ 60000", "label_2": "Unit", "val_2": "ms/min", "extra": "60,000 milliseconds make one minute." },
+    "seo_content": "Convert milliseconds to minutes for precise technical measurements."
+  },
+  {
+    "slug": "minutes-to-milliseconds-converter",
+    "title": "Minutes (min) to Milliseconds (ms) Converter",
+    "category": "time",
+    "from_unit": "min",
+    "data": { "main_val": "60000 ms", "label_1": "Formula", "val_1": "x 60000", "label_2": "Scale", "val_2": "1000x60", "extra": "One minute contains 60,000 milliseconds." },
+    "seo_content": "High-precision conversion from minutes to milliseconds."
+  },
+  {
+    "slug": "seconds-to-days-converter",
+    "title": "Seconds (s) to Days (d) Converter",
+    "category": "time",
+    "from_unit": "s",
+    "data": { "main_val": "1.157e-5 d", "label_1": "Formula", "val_1": "/ 86400", "label_2": "Full Day", "val_2": "86400s", "extra": "There are 86,400 seconds in a 24-hour day." },
+    "seo_content": "Convert seconds to days. Essential for astronomical and server uptime data."
+  },
+  {
+    "slug": "days-to-seconds-converter",
+    "title": "Days (d) to Seconds (s) Converter",
+    "category": "time",
+    "from_unit": "d",
+    "data": { "main_val": "86400 s", "label_1": "Formula", "val_1": "x 86400", "label_2": "Constant", "val_2": "24h", "extra": "A single day has 86,400 seconds." },
+    "seo_content": "Find out the number of seconds in any number of days."
+  },
+  {
+    "slug": "minutes-to-days-converter",
+    "title": "Minutes (min) to Days (d) Converter",
+    "category": "time",
+    "from_unit": "min",
+    "data": { "main_val": "0.000694 d", "label_1": "Formula", "val_1": "/ 1440", "label_2": "Daily", "val_2": "1440m", "extra": "One day equals 1,440 minutes." },
+    "seo_content": "Convert minutes to days. Great for time management tracking."
+  },
+  {
+    "slug": "days-to-minutes-converter",
+    "title": "Days (d) to Minutes (min) Converter",
+    "category": "time",
+    "from_unit": "d",
+    "data": { "main_val": "1440 min", "label_1": "Formula", "val_1": "x 1440", "label_2": "Factor", "val_2": "24x60", "extra": "There are 1,440 minutes in a standard day." },
+    "seo_content": "Calculate minutes from days instantly."
+  },
+  {
+    "slug": "weeks-to-hours-converter",
+    "title": "Weeks (wk) to Hours (h) Converter",
+    "category": "time",
+    "from_unit": "wk",
+    "data": { "main_val": "168 h", "label_1": "Formula", "val_1": "x 168", "label_2": "Weekly", "val_2": "7x24", "extra": "One week contains exactly 168 hours." },
+    "seo_content": "Convert weeks to hours for work schedule planning."
+  },
+  {
+    "slug": "hours-to-weeks-converter",
+    "title": "Hours (h) to Weeks (wk) Converter",
+    "category": "time",
+    "from_unit": "h",
+    "data": { "main_val": "0.00595 wk", "label_1": "Formula", "val_1": "/ 168", "label_2": "Cycle", "val_2": "168h", "extra": "168 hours make up one full week." },
+    "seo_content": "Find out how many weeks are in a set of hours."
+  },
+  {
+    "slug": "days-to-months-converter",
+    "title": "Days to Months Converter",
+    "category": "time",
+    "from_unit": "d",
+    "data": { "main_val": "0.0328 mo", "label_1": "Average", "val_1": "30.44 d", "label_2": "Basis", "val_2": "Gregorian", "extra": "One average Gregorian month is 30.44 days." },
+    "seo_content": "Convert days to months using the average Gregorian calendar month length."
+  },
+  {
+    "slug": "months-to-days-converter",
+    "title": "Months to Days Converter",
+    "category": "time",
+    "from_unit": "mo",
+    "data": { "main_val": "30.44 d", "label_1": "Formula", "val_1": "x 30.44", "label_2": "Standard", "val_2": "30.44", "extra": "Calculated based on the average month length of 30.44 days." },
+    "seo_content": "Easily calculate the number of days in any given number of months."
+  },
+  {
+    "slug": "months-to-years-converter",
+    "title": "Months to Years Converter",
+    "category": "time",
+    "from_unit": "mo",
+    "data": { "main_val": "0.0833 yr", "label_1": "Formula", "val_1": "/ 12", "label_2": "Year", "val_2": "12mo", "extra": "There are exactly 12 months in one solar year." },
+    "seo_content": "Convert months to years for age calculations or contract durations."
+  },
+  {
+    "slug": "years-to-months-converter",
+    "title": "Years to Months Converter",
+    "category": "time",
+    "from_unit": "yr",
+    "data": { "main_val": "12 mo", "label_1": "Formula", "val_1": "x 12", "label_2": "Annual", "val_2": "12", "extra": "One year consists of 12 calendar months." },
+    "seo_content": "Find out how many months are in a specific number of years."
+  },
+  {
+    "slug": "days-to-years-converter",
+    "title": "Days to Years Converter",
+    "category": "time",
+    "from_unit": "d",
+    "data": { "main_val": "0.00273 yr", "label_1": "Formula", "val_1": "/ 365.25", "label_2": "Leap Year", "val_2": "Included", "extra": "A leap year average is 365.25 days." },
+    "seo_content": "Convert days to years. Accurate calculation including leap year averages."
+  },
+  {
+    "slug": "years-to-days-converter",
+    "title": "Years to Days Converter",
+    "category": "time",
+    "from_unit": "yr",
+    "data": { "main_val": "365.25 d", "label_1": "Formula", "val_1": "x 365.25", "label_2": "Basis", "val_2": "Solar", "extra": "One year is approximately 365.25 days." },
+    "seo_content": "Calculate the total number of days in years instantly."
+  },
+  {
+    "slug": "years-to-decades-converter",
+    "title": "Years to Decades Converter",
+    "category": "time",
+    "from_unit": "yr",
+    "data": { "main_val": "0.1 dec", "label_1": "Formula", "val_1": "/ 10", "label_2": "Span", "val_2": "10y", "extra": "A decade is a period of 10 years." },
+    "seo_content": "Convert years to decades for historical or long-term data."
+  },
+  {
+    "slug": "decades-to-years-converter",
+    "title": "Decades to Years Converter",
+    "category": "time",
+    "from_unit": "dec",
+    "data": { "main_val": "10 yr", "label_1": "Formula", "val_1": "x 10", "label_2": "Standard", "val_2": "10", "extra": "One decade is exactly 10 years long." },
+    "seo_content": "Find out how many years are in any number of decades."
+  },
+  {
+    "slug": "years-to-centuries-converter",
+    "title": "Years to Centuries Converter",
+    "category": "time",
+    "from_unit": "yr",
+    "data": { "main_val": "0.01 cen", "label_1": "Formula", "val_1": "/ 100", "label_2": "Span", "val_2": "100y", "extra": "A century is defined as 100 years." },
+    "seo_content": "Convert years to centuries quickly."
+  },
+  {
+    "slug": "centuries-to-years-converter",
+    "title": "Centuries to Years Converter",
+    "category": "time",
+    "from_unit": "cen",
+    "data": { "main_val": "100 yr", "label_1": "Formula", "val_1": "x 100", "label_2": "Span", "val_2": "100y", "extra": "There are 100 years in one century." },
+    "seo_content": "Calculate the number of years in centuries."
   }
 ]
