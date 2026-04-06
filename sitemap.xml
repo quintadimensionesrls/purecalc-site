@@ -144,4 +144,10 @@
 <url><loc>https://purecalc.io/convert/zettabytes-to-exabytes-converter</loc><priority>0.6</priority></url>
 <url><loc>https://purecalc.io/convert/exabytes-to-zettabytes-converter</loc><priority>0.6</priority></url>
 <url><loc>https://purecalc.io/convert/yottabytes-to-zettabytes-converter</loc><priority>0.6</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-2</loc><priority>0.8</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-10</loc><priority>0.8</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-20</loc><priority>0.8</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-25</loc><priority>0.8</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-29</loc><priority>0.8</priority></url>
+<url><loc>https://purecalc.io/convert/cidr-to-subnet-mask-slash-32</loc><priority>0.8</priority></url>
 </urlset>
