@@ -1,5 +1,61 @@
 [
   {
+    "slug": "petabytes-to-terabytes-converter",
+    "title": "Petabytes (PB) to Terabytes (TB) Converter",
+    "category": "unit",
+    "from_unit": "PB",
+    "data": { "main_val": "1024 TB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Decimal", "val_2": "x 1000", "extra": "1 PB is 1,024 Terabytes. Common in Google Cloud and AWS storage buckets." },
+    "seo_content": "Convert Petabytes to Terabytes accurately. Essential for high-scale storage architecture and backup planning."
+  },
+  {
+    "slug": "terabytes-to-petabytes-converter",
+    "title": "Terabytes (TB) to Petabytes (PB) Converter",
+    "category": "unit",
+    "from_unit": "TB",
+    "data": { "main_val": "0.000976 PB", "label_1": "Formula", "val_1": "/ 1024", "label_2": "Scale", "val_2": "Peta", "extra": "1024 Terabytes make up exactly 1 Petabyte in binary systems." },
+    "seo_content": "Calculate how many Petabytes your Terabytes are. Used for enterprise data migration and server consolidation."
+  },
+  {
+    "slug": "exabytes-to-petabytes-converter",
+    "title": "Exabytes (EB) to Petabytes (PB) Converter",
+    "category": "unit",
+    "from_unit": "EB",
+    "data": { "main_val": "1024 PB", "label_1": "Binary", "val_1": "x 1024", "label_2": "Global Data", "val_2": "EB/PB", "extra": "An Exabyte is a massive unit: 1024 Petabytes. Total internet traffic is measured in EB." },
+    "seo_content": "Convert Exabytes to Petabytes. This tool is designed for calculating planetary-scale data storage metrics."
+  },
+  {
+    "slug": "petabytes-to-exabytes-converter",
+    "title": "Petabytes (PB) to Exabytes (EB) Converter",
+    "category": "unit",
+    "from_unit": "PB",
+    "data": { "main_val": "0.000976 EB", "label_1": "Ratio", "val_1": "1/1024", "label_2": "Standard", "val_2": "SI", "extra": "It takes 1024 Petabytes to equal just 1 Exabyte." },
+    "seo_content": "Find out the Exabyte equivalent of your Petabytes. Accurate tool for global IT infrastructure analysis."
+  },
+  {
+    "slug": "zettabytes-to-exabytes-converter",
+    "title": "Zettabytes (ZB) to Exabytes (EB) Converter",
+    "category": "unit",
+    "from_unit": "ZB",
+    "data": { "main_val": "1024 EB", "label_1": "The Zetta Era", "val_1": "x 1024", "label_2": "Scale", "val_2": "10^21", "extra": "1 Zettabyte = 1024 Exabytes. We are currently living in the Zettabyte Era of global data." },
+    "seo_content": "Convert Zettabytes to Exabytes. High-precision calculator for the world's largest data measurements."
+  },
+  {
+    "slug": "exabytes-to-zettabytes-converter",
+    "title": "Exabytes (EB) to Zettabytes (ZB) Converter",
+    "category": "unit",
+    "from_unit": "EB",
+    "data": { "main_val": "0.000976 ZB", "label_1": "Formula", "val_1": "/ 1024", "label_2": "Global", "val_2": "ZB", "extra": "1024 Exabytes = 1 Zettabyte. This unit represents almost all data on the entire internet." },
+    "seo_content": "Professional EB to ZB conversion for monitoring long-term data growth and digital storage trends."
+  },
+  {
+    "slug": "yottabytes-to-zettabytes-converter",
+    "title": "Yottabytes (YB) to Zettabytes (ZB) Converter",
+    "category": "unit",
+    "from_unit": "YB",
+    "data": { "main_val": "1024 ZB", "label_1": "Max Scale", "val_1": "x 1024", "label_2": "Name", "val_2": "Yotta", "extra": "A Yottabyte is the largest unit recognized by the SI system. It is 1024 Zettabytes." },
+    "seo_content": "Convert Yottabytes to Zettabytes. The ultimate tool for the most extreme data calculations possible."
+  }
+  {
     "slug": "cidr-to-subnet-mask-slash-1",
     "title": "/1 CIDR to Subnet Mask Converter",
     "category": "networking",
